@@ -1,109 +1,114 @@
+<!--===============================================================================================-->	
+    <link rel="icon" type="image/png" href="assets/Login_v2/images/icons/favicon.ico"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="assets/Login_v2/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="assets/Login_v2/fonts/iconic/css/material-design-iconic-font.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="assets/Login_v2/vendor/animate/animate.css">
+<!--===============================================================================================-->	
+	<link rel="stylesheet" type="text/css" href="assets/Login_v2/vendor/css-hamburgers/hamburgers.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="assets/Login_v2/vendor/animsition/css/animsition.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="assets/Login_v2/vendor/select2/select2.min.css">
+<!--===============================================================================================-->	
+	<link rel="stylesheet" type="text/css" href="assets/Login_v2/vendor/daterangepicker/daterangepicker.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="assets/Login_v2/css/util.css">
+	<link rel="stylesheet" type="text/css" href="assets/Login_v2/css/main.css">
+<!--===============================================================================================-->
+
 <div class="limiter">
-    <div class="container-login100" style="
-        background-image: -webkit-linear-gradient(bottom, #0250c5, #b8b5ae);
-        background-image: -o-linear-gradient(bottom, #0250c5, #b8b5ae);
-        background-image: -moz-linear-gradient(bottom, #0250c5, #b8b5ae);
-        background-image: linear-gradient(bottom, #0250c5, #b8b5ae);
-        ">
-        <div class="wrap-login100 p-l-50 p-r-50 p-t-77 p-b-30">
+    <div class="container-login100">
+        <div class="wrap-login100">
             <form class="login100-form validate-form">
-                <span class="login100-form-title p-b-55">
-                    SignUp
+                <span class="login100-form-title p-b-26">
+                    Sign In
+                </span>
+                <span class="login100-form-title p-b-48">
+                    <i class="zmdi zmdi-font"></i>
                 </span>
 
-                <div class="wrap-input100 validate-input m-b-16" data-validate="Firstname is required">
-                    <input class="input100" type="text" name="fname" placeholder="First Name">
-                    <span class="focus-input100"></span>
-                    <span class="symbol-input100">
-                        <span class="lnr lnr-user"></span>
-                    </span>
+                
+                <div class="wrap-input100 validate-input" data-validate = "Firstname is required">
+                    <input class="input100" type="text" name="fname">
+                    <span class="focus-input100" data-placeholder="Firstname"></span>
                 </div>
 
-                <div class="wrap-input100 validate-input m-b-16" data-validate="Lastname is required">
-                    <input class="input100" type="text" name="lname" placeholder="Last Name">
-                    <span class="focus-input100"></span>
-                    <span class="symbol-input100">
-                        <span class="lnr lnr-user"></span>
-                    </span>
+                <div class="wrap-input100 validate-input" data-validate = "Lastname is required">
+                    <input class="input100" type="text" name="lname">
+                    <span class="focus-input100" data-placeholder="Lastname"></span>
                 </div>
 
-                <div class="wrap-input100 validate-input m-b-16" data-validate="Valid email is required: ex@abc.xyz">
-                    <input class="input100" type="text" name="email" placeholder="Email">
-                    <span class="focus-input100"></span>
-                    <span class="symbol-input100">
-                        <span class="lnr lnr-envelope"></span>
-                    </span>
+                <div class="wrap-input100 validate-input" data-validate = "Valid email is required: a@b.c">
+                    <input class="input100" type="text" name="email">
+                    <span class="focus-input100" data-placeholder="Email"></span>
                 </div>
 
-                <div class="wrap-input100 validate-input m-b-16">
-                    <input class="input100" type="text" name="organization" placeholder="Organization">
-                    <span class="focus-input100"></span>
-                    <span class="symbol-input100">
-                        <span class="fa fa-building"></span>
-                    </span>
+                <div class="wrap-input100 validate-input" data-validate = "Organization is required">
+                    <input class="input100" type="text" name="organization">
+                    <span class="focus-input100" data-placeholder="Organization"></span>
                 </div>
 
-
-                <div class="wrap-input100 validate-input m-b-16" data-validate="Country is required">
-                    <input class="input100" type="text" name="country" placeholder="Country">
-                    <span class="focus-input100"></span>
-                    <span class="symbol-input100">
-                        <span class="fa fa-flag"></span>
-                    </span>
+                <div class="wrap-input100 validate-input" data-validate = "Country is required">
+                    <input class="input100" type="text" name="country">
+                    <span class="focus-input100" data-placeholder="Country"></span>
                 </div>
 
-                <div class="wrap-input100 validate-input m-b-16">
-                    <input class="input100" type="text" name="phone" placeholder="Phone Number">
-                    <span class="focus-input100"></span>
-                    <span class="symbol-input100">
-                        <span class="fa fa-mobile"></span>
-                    </span>
+                <div class="wrap-input100 validate-input" data-validate = "Valid phone number is required">
+                    <input class="input100" type="text" name="phone">
+                    <span class="focus-input100" data-placeholder="Phone"></span>
                 </div>
 
-                <div class="wrap-input100 validate-input m-b-16">
-                    <input class="input100" type="text" name="website" placeholder="Company Website">
-                    <span class="focus-input100"></span>
-                    <span class="symbol-input100">
-                        <span class="fa fa-bookmark"></span>
-                    </span>
+                <div class="wrap-input100 validate-input">
+                    <input class="input100" type="text" name="website">
+                    <span class="focus-input100" data-placeholder="Company Website"></span>
                 </div>
 
-                <div class="wrap-input100 validate-input m-b-16">
-                    <input class="input100" type="text" name="taxid" placeholder="Tax Id number">
-                    <span class="focus-input100"></span>
-                    <span class="symbol-input100">
-                        <span class="fa fa-file-excel-o"></span>
-                    </span>
+                <div class="wrap-input100 validate-input">
+                    <input class="input100" type="text" name="taxid">
+                    <span class="focus-input100" data-placeholder="Tax Id number"></span>
                 </div>
 
-                <div class="wrap-input100 validate-input m-b-16">
-                    <input class="input100" type="text" name="vatid" placeholder="VAT Id number">
-                    <span class="focus-input100"></span>
-                    <span class="symbol-input100">
-                        <span class="fa fa-file-excel-o"></span>
-                    </span>
+                <div class="wrap-input100 validate-input">
+                    <input class="input100" type="text" name="vatid">
+                    <span class="focus-input100" data-placeholder="VAT Id number"></span>
                 </div>
 
-                <div class="wrap-input100 validate-input m-b-16" data-validate="Password is required">
-                    <input class="input100" type="password" name="pass" placeholder="Password">
-                    <span class="focus-input100"></span>
-                    <span class="symbol-input100">
-                        <span class="lnr lnr-lock"></span>
+                <div class="wrap-input100 validate-input" data-validate="Enter password">
+                    <span class="btn-show-pass">
+                        <i class="zmdi zmdi-eye"></i>
                     </span>
+                    <input class="input100" type="password" name="pass">
+                    <span class="focus-input100" data-placeholder="Password"></span>
                 </div>
 
-                <div class="wrap-input100 validate-input m-b-16" data-validate="Password is required">
-                    <input class="input100" type="password" name="pass" placeholder="Confirm Password">
-                    <span class="focus-input100"></span>
-                    <span class="symbol-input100">
-                        <span class="lnr lnr-lock"></span>
+                <div class="wrap-input100 validate-input" data-validate="Enter password">
+                    <span class="btn-show-pass">
+                        <i class="zmdi zmdi-eye"></i>
                     </span>
+                    <input class="input100" type="password" name="confirm_pass">
+                    <span class="focus-input100" data-placeholder="Confirm Password"></span>
                 </div>
 
-                <div class="container-login100-form-btn p-t-25">
-                    <button class="login100-form-btn" (click)="register()">
-                        Sign UP
-                    </button>
+                <div class="container-login100-form-btn">
+                    <div class="wrap-login100-form-btn">
+                        <div class="login100-form-bgbtn"></div>
+                        <button class="login100-form-btn" (click)="signup()">
+                            Sign Up
+                        </button>
+                    </div>
+                </div>
+
+                <div class="text-center p-t-25">
+                    <span class="txt1">
+                        Have an account?
+                    </span>
+
+                    <a class="txt2" routerLink="/signin">
+                        Sign In
+                    </a>
                 </div>
 
                 <div class="text-center w-full p-t-42 p-b-22">
@@ -113,27 +118,17 @@
                 </div>
 
                 <a href="#" class="btn-face m-b-10">
-                    <i class="fa fa-facebook-official"></i> Facebook
-                </a>
-                
-                <a href="#" class="btn-linkedin m-b-10">
-                    <i class="fa fa-linkedin-square"></i> LinkedIn
+                    <i class="fa fa-facebook-official"></i>
+                    Facebook
                 </a>
 
-                <!-- <a href="#" class="btn-google m-b-10">
-                    <img src="../../assets/images/icons/icon-google.png" alt="GOOGLE"> Google
-                </a> -->
-
-                <div class="text-center w-full p-t-115">
-                    <span class="txt1">
-                        Have an account?
-                    </span>
-
-                    <a class="txt1 bo1 hov1" routerLink="/signin" >
-                        Login							
-                    </a>
-                </div>
+                <a href="#" class="btn-google m-b-10">
+                    <img src="assets/images/icons/icon-google.png" alt="GOOGLE">
+                    Google
+                </a>
             </form>
         </div>
     </div>
 </div>
+
+<div id="dropDownSelect1"></div>
