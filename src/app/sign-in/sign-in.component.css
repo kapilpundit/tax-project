@@ -410,7 +410,8 @@ iframe {
 [ Button sign in with ]*/
 
 .btn-face,
-.btn-google {
+.btn-google,
+.btn-linkedin {
     font-family: Raleway-Bold;
     font-size: 16px;
     line-height: 1.2;
@@ -442,6 +443,16 @@ iframe {
     padding-bottom: 1px;
 }
 
+.btn-linkedin {
+    color: #0170ad;
+}
+
+/* .btn-linkedin i {
+    font-size: 20px;
+    margin-right: 10px;
+    padding-bottom: 1px;
+} */
+
 .btn-google {
     color: #555555;
 }
@@ -453,7 +464,8 @@ iframe {
 }
 
 .btn-face:hover,
-.btn-google:hover {
+.btn-google:hover,
+.btn-linkedin:hover {
     border-color: #d33f8d;
 }
 
