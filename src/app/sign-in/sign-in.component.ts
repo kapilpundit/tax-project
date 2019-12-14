@@ -1,5 +1,7 @@
-import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { FormControl } from '@angular/forms';
+import { ReCaptchaV3Service } from 'ng-recaptcha';
 
 @Component({
   selector: 'app-sign-in',
@@ -9,16 +11,21 @@ import { Router } from '@angular/router';
 export class SignInComponent implements OnInit {
   username:string;
   password:string;
-  @ViewChild('recaptcha', {static: true }) recaptchaElement: ElementRef;
   
-  constructor(private router:Router) { }
+  constructor(private router:Router, 
+    private recaptchaV3Service: ReCaptchaV3Service) { }
 
   ngOnInit() {
-    this.addRecaptchaScript();
+  }
+
+  recaptchaCode(): void {
+    this.recaptchaV3Service.execute('importantAction')
+      .subscribe((token) => console.log(token));
   }
 
   login(){
-    // console.log("sdsd")
+    this.recaptchaCode();
+
     if(this.username === '' && this.password === ''){
       alert("Please enter Username and Password");
       return;
@@ -29,30 +36,5 @@ export class SignInComponent implements OnInit {
       return;
     }
   }
-
-  addRecaptchaScript() {
- 
-    window['grecaptchaCallback'] = () => {
-      this.renderReCaptcha();
-    }
-   
-    (function(d, s, id, obj){
-      var js, fjs = d.getElementsByTagName(s)[0];
-      if (d.getElementById(id)) { obj.renderReCaptcha(); return;}
-      js = d.createElement(s); js.id = id;
-      js.src = "https://www.google.com/recaptcha/api.js?onload=grecaptchaCallback&amp;render=explicit";
-      fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'recaptcha-jssdk', this));
-   
-  }
-
-  renderReCaptcha() {
-    window['grecaptcha'].render(this.recaptchaElement.nativeElement, {
-      'sitekey' : '6LezuMcUAAAAAHLp83eUAZhdCNE862obFxlTiRc4',
-      'callback': (response) => {
-          console.log(response);
-      }
-    });
-  }
-
+  
 }

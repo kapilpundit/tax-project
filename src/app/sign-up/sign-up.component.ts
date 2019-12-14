@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ReCaptchaV3Service } from 'ng-recaptcha';
+
 
 @Component({
   selector: 'app-sign-up',
@@ -7,9 +9,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SignUpComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    private recaptchaV3Service: ReCaptchaV3Service
+  ) { }
 
   ngOnInit() {
+  }
+
+  recaptchaCode(): void {
+    this.recaptchaV3Service.execute('importantAction')
+      .subscribe((token) => console.log(token));
+  }
+
+  register() {
+    this.recaptchaCode();
   }
 
 }

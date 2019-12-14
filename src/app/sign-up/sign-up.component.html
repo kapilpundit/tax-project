@@ -1,9 +1,9 @@
 <div class="limiter">
     <div class="container-login100" style="
-        background-image: -webkit-linear-gradient(bottom, #0250c5, #d43f8d);
-        background-image: -o-linear-gradient(bottom, #0250c5, #d43f8d);
-        background-image: -moz-linear-gradient(bottom, #0250c5, #d43f8d);
-        background-image: linear-gradient(bottom, #0250c5, #d43f8d);
+        background-image: -webkit-linear-gradient(bottom, #0250c5, #b8b5ae);
+        background-image: -o-linear-gradient(bottom, #0250c5, #b8b5ae);
+        background-image: -moz-linear-gradient(bottom, #0250c5, #b8b5ae);
+        background-image: linear-gradient(bottom, #0250c5, #b8b5ae);
         ">
         <div class="wrap-login100 p-l-50 p-r-50 p-t-77 p-b-30">
             <form class="login100-form validate-form">
@@ -11,16 +11,16 @@
                     SignUp
                 </span>
 
-                <div class="wrap-input100 validate-input m-b-16" data-validate="Valid email is required: ex@abc.xyz">
-                    <input class="input100" type="text" name="email" placeholder="First Name">
+                <div class="wrap-input100 validate-input m-b-16" data-validate="Firstname is required">
+                    <input class="input100" type="text" name="fname" placeholder="First Name">
                     <span class="focus-input100"></span>
                     <span class="symbol-input100">
                         <span class="lnr lnr-user"></span>
                     </span>
                 </div>
 
-                <div class="wrap-input100 validate-input m-b-16" data-validate="Valid email is required: ex@abc.xyz">
-                    <input class="input100" type="text" name="email" placeholder="Last Name">
+                <div class="wrap-input100 validate-input m-b-16" data-validate="Lastname is required">
+                    <input class="input100" type="text" name="lname" placeholder="Last Name">
                     <span class="focus-input100"></span>
                     <span class="symbol-input100">
                         <span class="lnr lnr-user"></span>
@@ -32,6 +32,55 @@
                     <span class="focus-input100"></span>
                     <span class="symbol-input100">
                         <span class="lnr lnr-envelope"></span>
+                    </span>
+                </div>
+
+                <div class="wrap-input100 validate-input m-b-16">
+                    <input class="input100" type="text" name="organization" placeholder="Organization">
+                    <span class="focus-input100"></span>
+                    <span class="symbol-input100">
+                        <span class="fa fa-building"></span>
+                    </span>
+                </div>
+
+
+                <div class="wrap-input100 validate-input m-b-16" data-validate="Country is required">
+                    <input class="input100" type="text" name="country" placeholder="Country">
+                    <span class="focus-input100"></span>
+                    <span class="symbol-input100">
+                        <span class="fa fa-flag"></span>
+                    </span>
+                </div>
+
+                <div class="wrap-input100 validate-input m-b-16">
+                    <input class="input100" type="text" name="phone" placeholder="Phone Number">
+                    <span class="focus-input100"></span>
+                    <span class="symbol-input100">
+                        <span class="fa fa-mobile"></span>
+                    </span>
+                </div>
+
+                <div class="wrap-input100 validate-input m-b-16">
+                    <input class="input100" type="text" name="website" placeholder="Company Website">
+                    <span class="focus-input100"></span>
+                    <span class="symbol-input100">
+                        <span class="fa fa-bookmark"></span>
+                    </span>
+                </div>
+
+                <div class="wrap-input100 validate-input m-b-16">
+                    <input class="input100" type="text" name="taxid" placeholder="Tax Id number">
+                    <span class="focus-input100"></span>
+                    <span class="symbol-input100">
+                        <span class="fa fa-file-excel-o"></span>
+                    </span>
+                </div>
+
+                <div class="wrap-input100 validate-input m-b-16">
+                    <input class="input100" type="text" name="vatid" placeholder="VAT Id number">
+                    <span class="focus-input100"></span>
+                    <span class="symbol-input100">
+                        <span class="fa fa-file-excel-o"></span>
                     </span>
                 </div>
 
@@ -52,7 +101,7 @@
                 </div>
 
                 <div class="container-login100-form-btn p-t-25">
-                    <button class="login100-form-btn">
+                    <button class="login100-form-btn" (click)="register()">
                         Sign UP
                     </button>
                 </div>
@@ -77,7 +126,7 @@
 
                 <div class="text-center w-full p-t-115">
                     <span class="txt1">
-                        Not a member?
+                        Have an account?
                     </span>
 
                     <a class="txt1 bo1 hov1" routerLink="/signin" >
