@@ -9,7 +9,7 @@ declare var jQuery:any;
 @Component({
   selector: 'app-sign-in',
   templateUrl: './sign-in.component.html',
-  styleUrls: ['./sign-in.component.css']
+  styleUrls: ['./sign-in.component.scss']
 })
 export class SignInComponent implements OnInit, AfterViewInit {
   username:string;
@@ -124,7 +124,7 @@ export class SignInComponent implements OnInit, AfterViewInit {
       alert("Please enter Username and Password");
       return;
     }else if(this.username === 'admin' && this.password === 'admin'){
-      this.router.navigate(['/dashboard']);
+      this.router.navigate(['/user/dashboard']);
     }else{
       alert("Invalid Username or Password");
       return;
