@@ -16,7 +16,7 @@ export class HomeComponent implements OnInit {
       var scroll = $(window).scrollTop();
   
        //>=, not <=
-      if (scroll >= 500) {
+      if (scroll >= 100) {
           //clearHeader, not clearheader - caps H
           $(".top-bar").removeClass("top-bar--top");
       }else{

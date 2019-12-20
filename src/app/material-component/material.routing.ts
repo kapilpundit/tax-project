@@ -19,67 +19,83 @@ import { SlideToggleComponent } from './slide-toggle/slide-toggle.component';
 
 export const MaterialRoutes: Routes = [
   {
-    path: 'button',
+    path: 'tax-home',
     component: ButtonsComponent
   },
   {
-    path: 'grid',
+    path: 'previous-taxes',
     component: GridComponent
   },
   {
-    path: 'lists',
+    path: 'my-organization',
     component: ListsComponent
   },
   {
-    path: 'menu',
+    path: 'create-new-company',
     component: MenuComponent
   },
-  {
-    path: 'tabs',
-    component: TabsComponent
-  },
-  {
-    path: 'stepper',
-    component: StepperComponent
-  },
-  {
-    path: 'expansion',
-    component: ExpansionComponent
-  },
-  {
-    path: 'chips',
-    component: ChipsComponent
-  },
-  {
-    path: 'toolbar',
-    component: ToolbarComponent
-  },
-  {
-    path: 'progress-snipper',
-    component: ProgressSnipperComponent
-  },
-  {
-    path: 'progress',
-    component: ProgressComponent
-  },
-  {
-    path: 'dialog',
-    component: DialogComponent
-  },
-  {
-    path: 'tooltip',
-    component: TooltipComponent
-  },
-  {
-    path: 'snackbar',
-    component: SnackbarComponent
-  },
-  {
-    path: 'slider',
-    component: SliderComponent
-  },
-  {
-    path: 'slide-toggle',
-    component: SlideToggleComponent
-  }
+  // {
+  //   path: 'button',
+  //   component: ButtonsComponent
+  // },
+  // {
+  //   path: 'grid',
+  //   component: GridComponent
+  // },
+  // {
+  //   path: 'lists',
+  //   component: ListsComponent
+  // },
+  // {
+  //   path: 'menu',
+  //   component: MenuComponent
+  // },
+  // {
+  //   path: 'tabs',
+  //   component: TabsComponent
+  // },
+  // {
+  //   path: 'stepper',
+  //   component: StepperComponent
+  // },
+  // {
+  //   path: 'expansion',
+  //   component: ExpansionComponent
+  // },
+  // {
+  //   path: 'chips',
+  //   component: ChipsComponent
+  // },
+  // {
+  //   path: 'toolbar',
+  //   component: ToolbarComponent
+  // },
+  // {
+  //   path: 'progress-snipper',
+  //   component: ProgressSnipperComponent
+  // },
+  // {
+  //   path: 'progress',
+  //   component: ProgressComponent
+  // },
+  // {
+  //   path: 'dialog',
+  //   component: DialogComponent
+  // },
+  // {
+  //   path: 'tooltip',
+  //   component: TooltipComponent
+  // },
+  // {
+  //   path: 'snackbar',
+  //   component: SnackbarComponent
+  // },
+  // {
+  //   path: 'slider',
+  //   component: SliderComponent
+  // },
+  // {
+  //   path: 'slide-toggle',
+  //   component: SlideToggleComponent
+  // }
 ];
